@@ -6,9 +6,22 @@ function refreshTime(){
 }
 setInterval(refreshTime, 1000);
 
-document.querySelectorAll("list-group-item") = function(){
-  if("list-group-item < timeDisplay"){
-    document.querySelector(".list-group-item").style.background = "red";
-  }
+var hour = document.querySelectorAll(".list-group-item")
+var currentHour = moment().hour();
 
-};
+console.log(currentHour)
+
+//   $("group-list-item").each(function()) {
+//     var timeDisplay = $(this).attr("id")
+//     if (currentHour > hour) {
+//       $(this).addClass("past")
+// //     }
+//     else if (currentHour == hour) {
+//       $(this).addClass("present")
+//     }
+//     else (currentHour < hour) {
+//       $(this).addClass("future")
+//     }
+//   };
+
+// var save = document.querySelectorAll()
